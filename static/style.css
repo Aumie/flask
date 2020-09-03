@@ -1,7 +1,11 @@
-html, body{
-    background-color: black;
+html{
+    background-image: url("../img/cat.png");
 }
 
 p{
-    color: white;
+    color: lightcyan;
+}
+
+.hello{
+    color: cyan;
 }
