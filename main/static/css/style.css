@@ -5,6 +5,7 @@ html, body{
   width: 100%;
   font-family: 'Popins', sans-serif;
   color: #222;
+  scroll-behavior: smooth;
 }
 .navbar-brand{
     font-family: 'Dancing Script', cursive;
@@ -50,7 +51,8 @@ html, body{
   margin-bottom: 1rem;
 }
 .who{
-    font-family: 'Caveat', cursive;
+  font-family: 'Caveat', cursive;
+  font-size: 22px;
 }
 .proj{
     font-family: 'DM Serif Text', serif;

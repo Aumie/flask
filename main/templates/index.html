@@ -13,17 +13,17 @@
 		<img class="d-block w-100" src="../static/img/Webp.net-resizeimage.jpg" alt="First img">
 	  </div>
 	</div>
-  </div>
+</div>
 
 <!--- Welcome Section -->
 <div class="container-fluid padding" id="aboutme">
 	<div class="row welcome text-center">
 		<div class="col-12">
-			<h1 class="display-4 who">Who am I?</h1>
+			<h1 class="display-4 who" style="font-weight: bold; font-size: 40px">Who am I?</h1>
 		</div>
 		<hr>
 		<div class="col-12">
-			<p class="lead who">paragraph</p>
+			<p class="lead who text-break">Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.</p>
 		</div>
 	</div>
 </div>
@@ -49,37 +49,52 @@
 <!--- Cards -->
 <div class="row welcome text-center">
     <div class="col-12">
-        <h1 class="display-4 proj" id="projects">Completed Project</h1>
+        <h1 class="display-4 proj" id="projects">Completed Project{% block admin%}{% endblock admin%}
+</h1>
     </div>
     <hr>
 </div>
-<div class="container-fluid padding proj">
+<div class="container-fluid padding ">
 	<div class="row padding">
-		<div class="col-md-6 ml-auto">
+
+		<div class="col-md-4">
 			<div class="card">
 				<img class="card-img-top" src="../static/img/Untitled.png">
 				<div class="card-body">
+					<h4 class="card-title">TPA, PLC Competition, Robo Harvester 2019</h4>
+					<p class="card-text">Competition</p>
+					<a href="projects/proj0" class="btn float-right btn-primary">See Details</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="../static/img/peopletools.PNG">
+				<div class="card-body">
 					<h4 class="card-title">People Counter</h4>
-					<p class="card-text">A project</p>
+					<p class="card-text">Internship Project</p>
 					<a href="projects/proj1" class="btn float-right btn-primary">See Details</a>
 				</div>
 			</div>
 		</div>
-		<div class="col-md-6">
+
+		<div class="col-md-4">
 			<div class="card">
-				<img class="card-img-top" src="static/img/team2.png">
+				<img class="card-img-top" src="../static/img/Untitled.png">
 				<div class="card-body">
 					<h4 class="card-title">About Me Webpage</h4>
-					<p class="card-text">this web</p>
+					<p class="card-text">Self-Project</p>
 					<a href="projects/proj2" class="btn float-right btn-primary">See Details</a>
 				</div>
 			</div>
 		</div>
+
 	</div>
 </div>
 
 <!--- Past internships -->
-<div class="row welcome text-center">
+<div class="row welcome text-center proj">
     <div class="col-12">
         <h1 class="display-4">Past internships</h1>
     </div>

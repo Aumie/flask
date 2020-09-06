@@ -9,12 +9,14 @@
  *, *::before, *::after {
 	 box-sizing: border-box;
 }
+ .daynight-resize{
+	 transform: scale(0.6);
+ }
  .headingOuter {
 	 background: #f1f1f1;
 	 text-align: center;
-	 margin-top: 50px;
 	 margin-bottom: 0;
-	 padding: 10px;
+
 	 border-top: 1px solid #333;
 	 border-bottom: 1px solid #333;
 	 font-size: 1.6em;
@@ -29,7 +31,7 @@
  .toggle {
 	 display: block;
 	 text-align: center;
-	 margin-top: 40px;
+
 	 user-select: none;
 }
  .toggle--checkbox {
@@ -37,7 +39,7 @@
 }
  .toggle--btn {
 	 display: block;
-	 margin: 0 auto;
+
 	 font-size: 1.4em;
 	 transition: all 350ms ease-in;
 }

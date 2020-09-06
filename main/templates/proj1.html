@@ -1,10 +1,83 @@
 {% extends "template.html" %}
 
 {% block head %}
+    <link href="../static/css/blog.css" rel="stylesheet">
     <title>People Counter</title>
 {% endblock head %}
 
 {% block main %}
-    <h1>about me</h1>
-    <br><a href="/">back</a>
+<a href="/#projects" class="btn btn-outline-dark btn-lg">Back</a>
+
+<div class="blog-body">
+  <div class="col-12 proj">
+      <h2 class="text-center">People Counter</h2>
+      <div id="slides" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner blog-img">
+              <img class="d-block w-100" src="../static/img/peopletools.PNG" alt="First img">
+          </div>
+      </div>
+
+      <div class="container-fluid">
+          <div class="row welcome col-12">
+              <p class="text-break">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This Project is about counting
+                  people when they are entering/exiting in an area.In a detection part, I use
+                  <a target="#" href="https://github.com/chuanqi305/MobileNet-SSD">MobileNet-SSD</a>
+                  Caffe implementation and OpenCV, and then this will process any frame which is passed by
+              IP camara or webcam for sending to the GUI (which is programmed with PyQt5). At this part, I got stuck
+              at the performance of projecting frames, it had a lot of delay, so I used a trick that is called "multi-thread programing".
+              It solved this problem easily (I think I don't understand it much to write it in the larger system, but if I have to do it,
+                  I'll put more effort to gain this power.), moreover it helped me a lot in displaying the loading status.</p>
+              <p class="text-break">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GUI section, I designed it
+              to have 1 main window for interacting with other camera (just only for filling the ip and opening camera.)
+              and 4 camera's windows for observing the result from each camera which is able to specify the limit of people to
+              be left in an area. If the number reaches the limit, it notifies users in the line group. And last one, Database, I chose firebase from google, It is
+              very handy from my view.</p>
+              <p class="text-break">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After all, I think this program is not
+              good enough, it still leaves some bugs behind in some cases that I don't realize. From this project, I didn't step into those model(e.g. Training a model from TensorFlow to do something) much. So, it
+              gave me a curiosity about what happened in the processing stage of those frames and it motivates me, so I have started to read
+                  about them from <a target="#" href="https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646/ref=pd_lpo_14_img_0/137-0276519-5358253?_encoding=UTF8&pd_rd_i=1492032646&pd_rd_r=e12a57ad-3036-4dad-8c7a-b429c00ea40e&pd_rd_w=Pgtpc&pd_rd_wg=4ZxTF&pf_rd_p=7b36d496-f366-4631-94d3-61b87b52511b&pf_rd_r=VEGEKMNV2J6FPDW6GHHP&psc=1&refRID=VEGEKMNV2J6FPDW6GHHP">this book</a>.</p>
+              <dl style="font-size: 20px">
+                  <dt>Tools I (really) used :</dt>
+                    <ul>
+                        <li>OpenCv</li>
+                        <li>Firebase</li>
+                        <li>Line notify</li>
+                        <li>PyQt5</li>
+                        <li>Git</li>
+                        <li>Qt Designer</li>
+                    </ul>
+                  <dt>This project is pure python :D</dt>
+              </dl>
+          </div>
+            <div>
+	  <div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-12 col-md-6">
+            <img class="d-block gif " src="../static/img/people0.PNG" alt="First img">
+		</div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <img class="d-block gif" src="../static/img/people1.PNG" alt="First img">
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6">
+            <img class="d-block gif" src="../static/img/people2.PNG" alt="First img">
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6">
+            <img class="d-block gif" src="../static/img/people3.PNG" alt="First img">
+		</div>
+	</div>
+	<hr class="my-4">
+</div>
+  </div>
+      </div>
+    </div>
+  </div>
+    	<hr class="my-4">
+</div>
+
+
+<div class="blog-footer">
+    <a href="/projects/proj0" class="btn btn-outline-dark btn-lg"><</a>
+    <a href="/projects/proj2" class="btn btn-outline-dark btn-lg">></a>
+</div>
+
 {% endblock main %}
