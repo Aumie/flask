@@ -1,12 +1,9 @@
 .blog-body {
   font-family: Arial;
   padding: 10px;
-
-}
-
-p{
-  font-size: 20px;
+  font-size: 1.2rem;
   color: #2f2f2f;
+
 }
 
 /* Header/Blog Title */
@@ -73,6 +70,9 @@ p{
   .techlogo{
     transform: scale(0.6);
   }
+  .blog-body{
+  font-size: 0.9rem;
+}
 }
 @media (max-width: 576px) {
 }
