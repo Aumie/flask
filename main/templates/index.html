@@ -23,13 +23,13 @@
 		</div>
 		<hr>
 		<div class="col-12">
-			<p class="lead who text-break">Hi, my name is Peerapat Channak (Aum). I really love programming (sometimes don't),
-				reading and memes. My skill is quite average, not bad not good, but I do trust that I can do everything, if I spend enough time on reading about it.</p>
-			<p class="lead who text-break">In my view, I think programming is about how much time you spent on searching and reading those tools.
-				Thus, when you have a clear understanding, you will have a great insight to pick any tool to suit on your project effectively.
+			<p class="lead who text-break">Hi, my name is Peerapat Channak (Aum). I do really love programming (sometimes don't),
+				and reading memes. My skill is quite average but I believe that I can do everything, if I spend enough time on it.</p>
+			<p class="lead who text-break">In my oppinion, I think programming is about how much time we've spent on searching and reading those tools.
+				Thus, when we have a clear understanding, we will have a great insight and then be able to pick up any tools to suit on our project effectively.
 			</p>
 			<a target="#" href="https://drive.google.com/file/d/1qkEx651c6nrfZnUh2FKfjQd1A_D8ZVCK/view?usp=sharing" type="button" class="btn btn-outline-dark btn-lg">Transcript</a>
-			<a target="#" href="https://drive.google.com/file/d/1bkbew52Jr62u4RsbsNf0hsO1CCbLBYIt/view?usp=sharing" type="button" class="btn btn-outline-light btn-lg">Résumé</a>
+			<a target="#" href="https://drive.google.com/file/d/1EizgaqFD0cl_QoltAOysgWzecMnGjpDB/view?usp=sharing" type="button" class="btn btn-outline-light btn-lg">CV</a>
 		</div>
 	</div>
 </div>
@@ -62,7 +62,7 @@
 <div class="container-fluid padding ">
 	<div class="row padding">
 
-		<div class="col-md-4">
+		<div class="col-xs-12 col-sm-6 col-md-4 hova">
 			<div class="card bg-dark mb3">
 				<img class="card-img-top" src="../static/img/plcthumb.jpg">
 				<div class="card-body">
@@ -73,7 +73,7 @@
 			</div>
 		</div>
 
-		<div class="col-md-4">
+		<div class="col-xs-12 col-sm-6 col-md-4 hova">
 			<div class="card bg-dark mb3">
 				<img class="card-img-top" src="../static/img/peopletools.PNG">
 				<div class="card-body">
@@ -84,7 +84,7 @@
 			</div>
 		</div>
 
-		<div class="col-xs-12 col-sm-6 col-md-4">
+		<div class="col-xs-12 col-sm-6 col-md-4 hova">
 			<div class="card bg-dark mb3">
 				<img class="card-img-top" src="../static/img/webpagethumb.PNG">
 				<div class="card-body">
@@ -97,7 +97,25 @@
 
 	</div>
 </div>
+<!--- certs -->
+<div class="row welcome text-center proj">
+    <div class="col-12">
+        <h1 class="display-4">Certificates</h1>
+    </div>
+    <hr>
+</div>
+<div class="container-fluid pading">
+	<div class="row text-center padding">
+		<div class="col-6">
+			<a href="https://www.linkedin.com/feed/update/urn:li:activity:6765580023249424384/" target="#"><img class="intern-logo" src="../static/img/cpp.png" alt="CPP cert"></a>
+		</div>
+		<div class="col-6">
+			<a href="https://www.linkedin.com/feed/update/urn:li:activity:6776467939681026048/" target="#"><img class="intern-logo" src="../static/img/saa.png" alt="SAA cert"></a>
+		</div>
 
+    </div>
+
+</div>
 <!--- Past internships -->
 <div class="row welcome text-center proj">
     <div class="col-12">
@@ -110,8 +128,29 @@
 		<div class="col-12">
 			<a href="http://ndrsolution.com/" target="#"><img class="intern-logo" src="../static/img/unnamed.png" alt="NDR Solution"></a>
 		</div>
+
     </div>
+
     <hr class="light-100">
 
 </div>
+
+<script>
+	$(document).ready(function (){
+		$('.hova').hover(
+			// hover
+			function(){
+				$(this).animate({
+					marginTop: "-=1%"
+				},200);
+			},
+			// out
+			function(){
+				$(this).animate({
+					marginTop: "0%"
+				},200);
+			}
+		);
+	});
+</script>
 {% endblock main %}
